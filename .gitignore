@@ -3,6 +3,229 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+import UIKit
+
+class GooglePixel22ViewController: UIViewController, Storyboarded {
+	var coordinator: MainCoordinator?
+
+	// MARK: - Properties
+	@IBOutlet private weak var rectangle2View: UIView!
+	@IBOutlet private weak var ellipse4View2: UIView!
+	@IBOutlet private weak var ellipse4View: UIView!
+	@IBOutlet private weak var nearbyPeopleLabel: UILabel!
+	@IBOutlet private weak var group8ImageView: UIImageView!
+	@IBOutlet private weak var group3ImageView: UIImageView!
+	@IBOutlet private weak var abhijayCh1ImageView: UIImageView!
+	@IBOutlet private weak var abhijayCh2ImageView: UIImageView!
+	@IBOutlet private weak var vaniaChImageView: UIImageView!
+	@IBOutlet private weak var vaniaChImageView2: UIImageView!
+	@IBOutlet private weak var aniketChImageView2: UIImageView!
+	@IBOutlet private weak var aniketChImageView: UIImageView!
+	@IBOutlet private weak var rectangle3View: UIView!
+	@IBOutlet private weak var rectangle4View: UIView!
+	@IBOutlet private weak var rectangle5View: UIView!
+	@IBOutlet private weak var abcLabel: UILabel!
+	@IBOutlet private weak var abcLabel3: UILabel!
+	@IBOutlet private weak var kmAwayLabel: UILabel!
+	@IBOutlet private weak var kmAwayLabel3: UILabel!
+	@IBOutlet private weak var designerLabel: UILabel!
+	@IBOutlet private weak var designerLabel3: UILabel!
+	@IBOutlet private weak var rectangle208View: UIView!
+	@IBOutlet private weak var viewLabel: UILabel!
+	@IBOutlet private weak var nearbyLabel: UILabel!
+	@IBOutlet private weak var vectorImageView: UIImageView!
+	@IBOutlet private weak var newDelhiLabel: UILabel!
+	@IBOutlet private weak var abhijayCh1ImageView3: UIImageView!
+	@IBOutlet private weak var abhijayCh2ImageView3: UIImageView!
+	@IBOutlet private weak var janakpuriLabel: UILabel!
+	@IBOutlet private weak var ellipse5View: UIView!
+	@IBOutlet private weak var ellipse11View: UIView!
+	@IBOutlet private weak var ellipse12View: UIView!
+	@IBOutlet private weak var homeE80fGlyphImageView: UIImageView!
+	@IBOutlet private weak var subtractImageView: UIImageView!
+	@IBOutlet private weak var rectangle205View: UIView!
+	@IBOutlet private weak var rectangle206View: UIView!
+	@IBOutlet private weak var rectangle204View: UIView!
+	@IBOutlet private weak var homeLabel: UILabel!
+	@IBOutlet private weak var creditsLabel: UILabel!
+	@IBOutlet private weak var profileLabel: UILabel!
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		setupViews()
+		setupLayout()
+	}
+
+}
+
+extension GooglePixel22ViewController {
+	private func setupViews() {
+
+		rectangle2View.backgroundColor = UIColor.anchor
+
+
+		ellipse4View2.layer.cornerRadius = 22
+		ellipse4View2.layer.masksToBounds =  true
+		ellipse4View2.backgroundColor = UIColor.ash
+
+
+		ellipse4View.layer.cornerRadius = 22
+		ellipse4View.layer.masksToBounds =  true
+		ellipse4View.backgroundColor = UIColor.ash
+
+
+		nearbyPeopleLabel.textColor = UIColor.daisy
+		nearbyPeopleLabel.numberOfLines = 0
+		nearbyPeopleLabel.font = UIFont.textStyle
+		nearbyPeopleLabel.textAlignment = .left
+		nearbyPeopleLabel.text = NSLocalizedString("nearby.people", comment: "")
+
+		rectangle3View.layer.cornerRadius = 20
+		rectangle3View.layer.masksToBounds =  true
+		rectangle3View.addGradient(type: .axial,
+		                    startPoint: CGPoint(x:0.5, y:0),
+		                    endPoint: CGPoint(x:0.5, y:1),
+		                    colorArray: [UIColor(red:0.9372549057006836, green: 0.815529465675354, blue: 0.1764705777168274, alpha: 1), UIColor(red:0.5529412031173706, green: 0.4274509847164154, blue: 0.3176470696926117, alpha: 1)],
+		                    locations: [0, 1])
+
+
+		rectangle4View.layer.cornerRadius = 20
+		rectangle4View.layer.masksToBounds =  true
+		rectangle4View.addGradient(type: .axial,
+		                    startPoint: CGPoint(x:0.5, y:0),
+		                    endPoint: CGPoint(x:0.5, y:1),
+		                    colorArray: [UIColor(red:0.1764705926179886, green: 0.5372549295425415, blue: 0.9372549057006836, alpha: 1), UIColor(red:0, green: 0.36159804463386536, blue: 0.762499988079071, alpha: 1)],
+		                    locations: [0, 1])
+
+
+		rectangle5View.layer.cornerRadius = 20
+		rectangle5View.layer.masksToBounds =  true
+		rectangle5View.addGradient(type: .axial,
+		                    startPoint: CGPoint(x:0.5, y:0),
+		                    endPoint: CGPoint(x:0.5, y:1),
+		                    colorArray: [UIColor(red:0.8745098114013672, green: 0.6980392336845398, blue: 0.545098066329956, alpha: 1), UIColor(red:0, green: 0.36159804463386536, blue: 0.762499988079071, alpha: 1)],
+		                    locations: [0, 1])
+
+
+		abcLabel.textColor = UIColor.daisy
+		abcLabel.numberOfLines = 0
+		abcLabel.font = UIFont.textStyle4
+		abcLabel.textAlignment = .left
+		abcLabel.text = NSLocalizedString("abc", comment: "")
+
+		abcLabel3.textColor = UIColor.daisy
+		abcLabel3.numberOfLines = 0
+		abcLabel3.font = UIFont.textStyle4
+		abcLabel3.textAlignment = .left
+		abcLabel3.text = NSLocalizedString("abc", comment: "")
+
+		kmAwayLabel.textColor = UIColor.daisy
+		kmAwayLabel.numberOfLines = 0
+		kmAwayLabel.font = UIFont.textStyle5
+		kmAwayLabel.textAlignment = .left
+		kmAwayLabel.text = NSLocalizedString("4km.away", comment: "")
+
+		kmAwayLabel3.textColor = UIColor.daisy
+		kmAwayLabel3.numberOfLines = 0
+		kmAwayLabel3.font = UIFont.textStyle5
+		kmAwayLabel3.textAlignment = .left
+		kmAwayLabel3.text = NSLocalizedString("6km.away", comment: "")
+
+		designerLabel.textColor = UIColor.daisy
+		designerLabel.numberOfLines = 0
+		designerLabel.font = UIFont.textStyle5
+		designerLabel.textAlignment = .left
+		designerLabel.text = NSLocalizedString("designer", comment: "")
+
+		designerLabel3.textColor = UIColor.daisy
+		designerLabel3.numberOfLines = 0
+		designerLabel3.font = UIFont.textStyle5
+		designerLabel3.textAlignment = .left
+		designerLabel3.text = NSLocalizedString("designer", comment: "")
+
+		rectangle208View.layer.cornerRadius = 8
+		rectangle208View.layer.masksToBounds =  true
+		rectangle208View.backgroundColor = UIColor.black
+
+
+		viewLabel.textColor = UIColor.daisy
+		viewLabel.numberOfLines = 0
+		viewLabel.font = UIFont.textStyle2
+		viewLabel.textAlignment = .left
+		viewLabel.text = NSLocalizedString(".view", comment: "")
+
+		nearbyLabel.textColor = UIColor.daisy
+		nearbyLabel.numberOfLines = 0
+		nearbyLabel.font = UIFont.textStyle3
+		nearbyLabel.textAlignment = .left
+		nearbyLabel.text = NSLocalizedString("nearby", comment: "")
+
+		newDelhiLabel.textColor = UIColor.black
+		newDelhiLabel.numberOfLines = 0
+		newDelhiLabel.font = UIFont.textStyle7
+		newDelhiLabel.textAlignment = .left
+		newDelhiLabel.text = NSLocalizedString("new.delhi", comment: "")
+
+		janakpuriLabel.textColor = UIColor.coin
+		janakpuriLabel.numberOfLines = 0
+		janakpuriLabel.font = UIFont.textStyle3
+		janakpuriLabel.textAlignment = .left
+		janakpuriLabel.text = NSLocalizedString("janakpuri", comment: "")
+
+		ellipse5View.layer.cornerRadius = 106
+		ellipse5View.layer.masksToBounds =  true
+		ellipse5View.addGradient(type: .axial,
+		                    startPoint: CGPoint(x:0.19, y:0.09),
+		                    endPoint: CGPoint(x:0.93, y:0.81),
+		                    colorArray: [UIColor(red:0.1764705926179886, green: 0.5372549295425415, blue: 0.9372549057006836, alpha: 1), UIColor(red:0.1764705926179886, green: 0.5372549295425415, blue: 0.9372549057006836, alpha: 0)],
+		                    locations: [0, 1])
+
+
+		ellipse11View.layer.cornerRadius = 27
+		ellipse11View.layer.masksToBounds =  true
+		ellipse11View.backgroundColor = UIColor.iris2
+
+
+		ellipse12View.layer.cornerRadius = 27
+		ellipse12View.layer.masksToBounds =  true
+		ellipse12View.backgroundColor = UIColor.salt
+
+
+		rectangle205View.backgroundColor = UIColor.black
+
+
+		rectangle206View.backgroundColor = UIColor.black
+
+
+		rectangle204View.backgroundColor = UIColor.black
+
+
+		homeLabel.textColor = UIColor.iris
+		homeLabel.numberOfLines = 0
+		homeLabel.font = UIFont.textStyle8
+		homeLabel.textAlignment = .left
+		homeLabel.text = NSLocalizedString("home", comment: "")
+
+		creditsLabel.textColor = UIColor.coin
+		creditsLabel.numberOfLines = 0
+		creditsLabel.font = UIFont.textStyle8
+		creditsLabel.textAlignment = .left
+		creditsLabel.text = NSLocalizedString("credits", comment: "")
+
+		profileLabel.textColor = UIColor.coin
+		profileLabel.numberOfLines = 0
+		profileLabel.font = UIFont.textStyle8
+		profileLabel.textAlignment = .left
+		profileLabel.text = NSLocalizedString("profile", comment: "")
+
+
+	}
+
+	private func setupLayout() {
+		//Constraints are defined in Storyboard file.
+	}
+
+}
 
 # Other files and folders
 .settings/
